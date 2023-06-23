@@ -13,14 +13,15 @@ const Navbar = () => {
 
     const handleLink = (link) => {
         setActiveLink(link);
+        setShowHamburger(!showHamburger);
     }
 
     const navLinks = [
         { id: 1, text: 'Home', link: '/' },
         { id: 2, text: 'Artwork', link: '/artwork' },
         { id: 3, text: 'Events', link: '/events' },
-        { id: 3, text: 'Buy Paintings', link: '/buy' },
-        { id: 3, text: 'Contact Me', link: '/contactme' },
+        { id: 4, text: 'Buy Paintings', link: '/buy' },
+        { id: 5, text: 'Contact Me', link: '/contactme' },
 
       ];
 
@@ -30,10 +31,10 @@ const Navbar = () => {
             <div className="brand">Debajyoti Sarkar</div>
             <nav className="navbar-container">
 
-                <div className='nav-links'>
+                <div className={`nav-links ${showHamburger ? "active" : ""}`}>
 
                     {navLinks.map(navLink => (
-                        <Link className={`nav-item ${activeLink === navLink.link ? "active": ""}`} to={navLink.link} onClick={() => handleLink(navLink.link)}>{navLink.text}</Link>
+                        <Link key={navLink.id} className={`nav-item ${activeLink === navLink.link ? "active": ""}`} to={navLink.link} onClick={() => handleLink(navLink.link)}>{navLink.text}</Link>
                     ))}
 
 
