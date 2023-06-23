@@ -23,8 +23,8 @@ const ContactMe = () => {
         setFormData({ name: "", email: "", message: "" });
 
         try {
-            const {data} =  await axios.post("http://localhost:5000/contact-form-handler", formData);
-            // const {data} =  await axios.post("https://portfolio-backend-ww59.onrender.com/contact-form-handler", formData);
+            // const {data} =  await axios.post("http://localhost:5000/contact-form-handler", formData);
+            const {data} =  await axios.post("https://debajyoti-backend.onrender.com/contact-form-handler", formData);
             console.log(data);
 
             toast.success('Message sent!', {
