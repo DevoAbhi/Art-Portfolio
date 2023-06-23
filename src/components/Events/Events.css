@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    /* height: 70vh; */
     margin-top: 20px;
 
     /* background-color: aqua; */

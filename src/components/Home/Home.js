@@ -22,10 +22,10 @@ const Home = () => {
                 </div>
 
                 <div className="social-icons">
-                    <a href="https://github.com/DevoAbhi" target="_blank" rel="noopener noreferrer">
-                        <img src={facebook} alt="github" />
+                    <a href="https://www.facebook.com/debajyoti.sarkar.940" target="_blank" rel="noopener noreferrer">
+                        <img src={facebook} alt="facebook" />
                     </a>
-                    <a href="https://twitter.com/home?lang=en" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/debajyotiart?lang=en" target="_blank" rel="noopener noreferrer">
                         <img src={twitter} alt="twitter" />
                     </a>
                 </div>

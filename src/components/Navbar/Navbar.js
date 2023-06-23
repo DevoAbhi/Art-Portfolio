@@ -20,6 +20,7 @@ const Navbar = () => {
                     <Link className={`nav-item ${showHamburger ? "active" : ""}`} to='/' onClick={() => hamburgerHandler}>Home</Link>
                     <Link className={`nav-item ${showHamburger ? "active" : ""}`} to='/artwork' onClick={() => hamburgerHandler}>Artwork</Link>
                     <Link className={`nav-item ${showHamburger ? "active" : ""}`} to='/events' onClick={hamburgerHandler}>Events</Link>
+                    <Link className={`nav-item ${showHamburger ? "active" : ""}`} to='/buy' onClick={hamburgerHandler}>Buy Paintings</Link>
                     <Link className={`nav-item ${showHamburger ? "active" : ""}`} to='/contactme' onClick={hamburgerHandler}>Contact me</Link>
                 </div>
 

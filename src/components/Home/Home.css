@@ -1,7 +1,7 @@
 .home-section {
     /* margin-top: 50px; */
     /* background-color: aqua; */
-    height: 70vh;
+    /* height: 70vh; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;

@@ -1,0 +1,25 @@
+.buy {
+    margin: 20px;
+}
+
+.buy-desc {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+li p {
+    font-size: 20px;
+    color: brown;
+    
+}
+
+li span {
+    font-size: 18px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: brown;
+    font-weight: 600;
+}

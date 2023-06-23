@@ -23,10 +23,6 @@ const ContactMe = () => {
         setFormData({ name: "", email: "", message: "" });
 
         try {
-            // const {data} =  await axios.post("http://localhost:5000/contact-form-handler", formData);
-            const {data} =  await axios.post("https://debajyoti-backend.onrender.com/contact-form-handler", formData);
-            console.log(data);
-
             toast.success('Message sent!', {
                 position: "top-right",
                 autoClose: 5000,
@@ -37,6 +33,10 @@ const ContactMe = () => {
                 progress: undefined,
                 theme: "light",
                 });
+            // const {data} =  await axios.post("http://localhost:5000/contact-form-handler", formData);
+            const {data} =  await axios.post("https://debajyoti-backend.onrender.com/contact-form-handler", formData);
+            console.log(data);
+
         } catch (error) {
             console.log("Something went wrong sending the message -> ", error);
             toast.error('Something went wrong!', {
